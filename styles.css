@@ -1,0 +1,338 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 5rem 0;
+  background-color: black;
+  color: #fff;
+  position: relative;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Ensure height matches width for a perfect circle */
+  margin-right: 20px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#language-select {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#language-select:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+/* About, Projects, and Contact section styles */
+section {
+  padding: 5rem 0;
+}
+#about{
+  background-color: #f5e9dc;
+}
+#certificates{
+  background-color:#f5e9dc ;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Hero styles */
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+/*projects section */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.project-card {
+  flex: 1 1 30%; /* Two cards per row with some space in between */
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.projects-container h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* Certificates section styles */
+.certificates-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.certificate-card {
+  height: 160px;
+  width: 250px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.certificate-card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Contact section styles */
+
+.contact-section h3{
+  text-align: center;
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.icons a i{
+  margin-right: 5rem;
+}
+
+.fa-brands.fa-linkedin, .fa-brands.fa-github, .fa-brands.fa-instagram, .fa-brands.fa-meta{
+  color: black;
+ font-size: 2rem;
+
+}
+
+.icons a:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container h1{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor:pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+/*form*/
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+/* Hover effect for the submit button */
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .container h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p,
+  .container p,
+  .certificate-card p {
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+}
