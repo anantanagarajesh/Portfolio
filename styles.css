@@ -144,10 +144,12 @@ section {
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  
 }
 
 .projects-container h3 {
@@ -163,6 +165,7 @@ section {
 
 
 /* Certificates section styles */
+
 .certificates-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -214,7 +217,7 @@ section {
 .fa-brands.fa-linkedin, .fa-brands.fa-github, .fa-brands.fa-instagram, .fa-brands.fa-meta{
   color: black;
  font-size: 2rem;
-
+padding-left: 20px;
 }
 
 .icons a:hover {
