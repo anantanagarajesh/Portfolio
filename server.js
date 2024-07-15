@@ -4,12 +4,12 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // MongoDB connection
-mongoose.connect("mongodb+srv://rajeshmalisetty0111:Rajesh2002@rajesh.gin6adh.mongodb.net/?retryWrites=true&w=majority&appName=Rajesh", {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
 }).then(() => {
   console.log("Connected to MongoDB");
 }).catch((error) => {
@@ -19,7 +19,7 @@ mongoose.connect("mongodb+srv://rajeshmalisetty0111:Rajesh2002@rajesh.gin6adh.mo
 const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
-  message: String
+  message: String,
 });
 
 const Contact = mongoose.model("Contact", contactSchema);
@@ -39,7 +39,7 @@ app.post("/api/contact", (req, res) => {
       console.log("Data saved successfully");
       res.json({ status: "success" });
     })
-    .catch(err => {
+    .catch((err) => {
       console.error("Error saving data:", err);
       res.json({ status: "error", error: err });
     });
